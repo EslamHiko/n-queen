@@ -11,18 +11,18 @@
 
     <!-- Css Files -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/bootstrap-grid.min.css" rel="stylesheet">
+	<!-- <link href="css/bootstrap-grid.min.css" rel="stylesheet"> -->
 
     <!-- Favicons -->
-    <link rel="shortcut icon" href="images/favicon.ico">
+    <!-- <link rel="shortcut icon" href="images/favicon.ico"> -->
 
 </head>
 
 <body>
-    
-    
-   
-       
+
+
+
+
      <body class="bg-light">
     <div class="container">
   <div class="py-5 text-center">
@@ -32,55 +32,46 @@
 	The N Queen is the problem of placing N chess queens on an N×N chessboard so that no two queens attack each other.
 	</p>
   </div>
-  
+
   <div class="container" id="n-q">
 	<div class="col-md-12">
-	<div class="mb-3 text-center">
+	<div class="mb-3 text-center" id="n-input">
           <label for="n">Enter N</label>
-          <input type="text" class="form-control" id="n" placeholder="Enter N">
+          <input type="number" min="4" max="8" class=" form-control" id="n" placeholder="Enter N">
         </div>
-		</div>
+        <div class="mb-3 text-center">
+          <button type="button" class="col-md-4 form-control btn btn-success" id="n-btn" name="button">Start</button>
+
+        </div>
+
+        </div>
+
+
 		<table class="table table-hover">
-  
+
   <tbody>
-    <tr>
-      <th><input type="checkbox" class="form-control" id="n2" placeholder="Enter N"></th>
-      <th><input type="checkbox" class="form-control" id="n2" placeholder="Enter N"></th>
-      <th><input type="checkbox" class="form-control" id="n2" placeholder="Enter N"></th>
-      <th><input type="checkbox" class="form-control" id="n2" placeholder="Enter N"></th>
-    </tr>
-    <tr>
-      <th><input type="checkbox" class="form-control" id="n2" placeholder="Enter N"></th>
-      <th><input type="checkbox" class="form-control" id="n2" placeholder="Enter N"></th>
-      <th><input type="checkbox" class="form-control" id="n2" placeholder="Enter N"></th>
-      <th><input type="checkbox" class="form-control" id="n2" placeholder="Enter N"></th>
-    </tr>
-	<tr>
-      <th><input type="checkbox" class="form-control" id="n2" placeholder="Enter N"></th>
-      <th><input type="checkbox" class="form-control" id="n2" placeholder="Enter N"></th>
-      <th><input type="checkbox" class="form-control" id="n2" placeholder="Enter N"></th>
-      <th><input type="checkbox" class="form-control" id="n2" placeholder="Enter N"></th>
-    </tr>
-	<tr>
-      <th><input type="checkbox" class="form-control" id="n2" placeholder="Enter N"></th>
-      <th><input type="checkbox" class="form-control" id="n2" placeholder="Enter N"></th>
-      <th><input type="checkbox" class="form-control" id="n2" placeholder="Enter N"></th>
-      <th><input type="checkbox" class="form-control" id="n2" placeholder="Enter N"></th>
-    </tr>
+
   </tbody>
 </table>
+<div class="mb-3 text-center form-group">
+   <button type="button" class="col-md-4 form-control btn btn-success" id="n-btn" name="button">Check</button>
+   <button type="button" class="col-md-4 form-control btn btn-success" id="n-btn" name="button">Solve</button>
+
+ </div>
   </div>
 
-  
+
 </div>
-       
-       
-    
+
+
+
 
 
     <!-- Javascript Files -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+
     <script src="js/bootstrap.bundle.min.js"></script>
-    
+
     <script src="js/script.js"></script>
 
 </body>

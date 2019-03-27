@@ -1,4 +1,4 @@
-var board = [][];
+var board = [];
 var triesCount = 0;
 var N = 0;
 
@@ -12,6 +12,7 @@ function fillNBoard(N){
     }
     html += '</tr>';
   }
+
   $('tbody').html(html);
   addEventListeners();
 }
@@ -27,10 +28,12 @@ function removeBoard(){
 function readBoard(){
   var count = 0;
   $('[col]').each(function(index, el) {
-    if($(this).is(':checked'))
+    if($(this).is(':checked')){
       board[$(this).attr('col')][$(this).attr('row')] = 1;
+      count++;
+    }
   });
-  count++;
+  return count;
 }
 
 function addEventListeners(){
@@ -57,3 +60,14 @@ function checkBoard(){
 function solveBoard(N){
 
 }
+
+
+$(document).ready(function() {
+  $('#n-btn').on('click', function(event) {
+    N = $('#n').val();
+    fillNBoard(N);
+    board = [];
+    for(i = 0; i < N; i++)
+      board.push([]);
+  });
+});
